@@ -1,3 +1,5 @@
+"use client";
+
 import { useRouter } from "next/navigation";
 
 // page.tsx대신 route.tsx 쓰는 방법도 있다
