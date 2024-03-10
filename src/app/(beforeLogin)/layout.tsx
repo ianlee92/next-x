@@ -8,7 +8,6 @@ type Props = {
 export default function Layout({ children, modal }: Props) {
   return (
     <div>
-      비포 로그인 레이아웃
       {/* @modal 이외는 children에 (beforeLogin)의 i/flow/login 및 signup, login, page.tsx */}
       {children}
       {/* modal은 패러렐 라우트를 사용한 @modal 폴더에 포함된 것들 */}
