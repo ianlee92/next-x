@@ -16,3 +16,6 @@ export default function Layout({ children, modal }: Props) {
     </div>
   );
 }
+
+// localhost:3000일 때, children -> page.tsx, modal -> @modal/default.tsx
+// localhost:3000/i/flow/login일 때, children -> i/flow/login/page.tsx, modal -> @modal/i/flow/login/page.tsx
