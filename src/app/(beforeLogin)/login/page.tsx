@@ -1,6 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
+import Main from "@/app/(beforeLogin)/_component/Main";
 
 // page.tsx대신 route.tsx 쓰는 방법도 있다
 // next 13버젼에 나온 redirect 기능 (서버 리다이렉트)
@@ -10,7 +11,8 @@ import { useRouter } from "next/navigation";
 export default function Login() {
   const router = useRouter();
   router.replace("/i/flow/login");
-  return null;
+  // /i/flow/login 가기전에 /login을 거쳐서 가기 때문에 /login/page.tsx에 배경을 똑같이 적용해줘야됨
+  return <Main />;
 }
 
 // push와 replace 뒤로가기할 때 이동이 다름

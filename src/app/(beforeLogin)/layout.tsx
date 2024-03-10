@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import styles from "@/app/(beforeLogin)/_component/main.module.css";
 
 type Props = {
   children: ReactNode;
@@ -7,7 +8,7 @@ type Props = {
 
 export default function Layout({ children, modal }: Props) {
   return (
-    <div>
+    <div className={styles.container}>
       {/* @modal 이외는 children에 (beforeLogin)의 i/flow/login 및 signup, login, page.tsx */}
       {children}
       {/* modal은 패러렐 라우트를 사용한 @modal 폴더에 포함된 것들 */}
