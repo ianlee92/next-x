@@ -19,7 +19,7 @@ export default function Home() {
         </Link>
         <h3>이미 트위터에 가입하셨나요?</h3>
         {/* x에서 /login으로 이동할 때 /i/flow/login으로 리다이렉트됨 */}
-        <Link href="/login" className={styles.login}>
+        <Link href="/i/flow/login" className={styles.login}>
           로그인
         </Link>
       </div>
