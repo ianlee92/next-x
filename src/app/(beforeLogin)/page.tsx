@@ -1,7 +1,8 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+// @는 src를 가리킨다
+import styles from "@/app/page.module.css";
 import Link from "next/link";
-import Logo from "../../public/logo.jpg";
+import Logo from "/public/logo.jpg";
 
 export default function Home() {
   return (
